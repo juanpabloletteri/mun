@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
+import { PrincipalPage } from '../principal/principal'
 
 @Component({
   selector: 'page-home',
@@ -13,13 +13,8 @@ export class HomePage {
 
   }
   ingresar() {
-    if (this.usuario == "1" && this.usuario == "1") {
-      let loader = this.loadingCtrl.create({
-        content: "Please wait...",
-        duration: 1500
-      });
-      loader.present();
-      this.navCtrl.push(LoginPage);
+    if (this.usuario == "1" && this.password == "1") {
+      this.navCtrl.push(PrincipalPage);
     }
     else {
       let alert = this.alertCtrl.create({

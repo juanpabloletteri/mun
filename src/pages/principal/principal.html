@@ -1,0 +1,50 @@
+<!--
+  Generated template for the PrincipalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Principal</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-card-header>
+      Datos del Guardia
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        Movil: 57
+      </ion-list>
+      <ion-list>
+        Legajo: 031
+      </ion-list>
+      <ion-list>
+        Status: Activo
+      </ion-list>
+    </ion-card-content>
+
+  </ion-card>
+  <br>
+  <br>
+  <br>
+  <button ion-button full color="secondary" (click)="lista()">Orden de trabajo</button>
+  <br>
+  <br>
+  <button ion-button full (click)="novedades()">Novedades a reportar</button>
+  <br>
+  <br>
+  <button ion-button full color="danger" (click)="telefonos()">Telefonos Importantes</button>
+  <br>
+  <br>
+  <button ion-button full color="dark" (click)="otros()">Otros</button>
+</ion-content>
