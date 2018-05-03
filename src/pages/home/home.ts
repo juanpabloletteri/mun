@@ -13,7 +13,8 @@ export class HomePage {
 
   }
   ingresar() {
-    if (this.usuario == "1" && this.password == "1") {
+    this.navCtrl.push(PrincipalPage);
+    /*if (this.usuario == "1" && this.password == "1") {
       this.navCtrl.push(PrincipalPage);
     }
     else {
@@ -23,7 +24,7 @@ export class HomePage {
         buttons: ['OK']
       });
       alert.present();
-    }
+    }*/
 
   }
 }
