@@ -7,12 +7,70 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>lista</ion-title>
+    <ion-title>Tareas a Realizar</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-item (click)="entrar('poste')">
+      <ion-thumbnail item-start>
+        <img src="/assets/img/poste.jpg">
+      </ion-thumbnail>
+      <h2>Poste Defectuoso</h2>
+      <p>Av. Mitre 4251</p>
+    </ion-item>
+  </ion-list>
 
+  <ion-list>
+    <ion-item (click)="entrar('inspeccion')">
+      <ion-thumbnail item-start>
+        <img src="/assets/img/matafuego.jpg">
+      </ion-thumbnail>
+      <h2>Inspeccion Antisiniestral</h2>
+      <p>Av. Belgrano 3587</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item (click)="entrar('')">
+      <ion-thumbnail item-start>
+        <img src="/assets/img/vereda.jpg">
+      </ion-thumbnail>
+      <h2>Apertura en vereda</h2>
+      <p>Barcelo 754</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item (click)="entrar('')">
+      <ion-thumbnail item-start>
+        <img src="/assets/img/habilitacion.jpg">
+      </ion-thumbnail>
+      <h2>Inspeccion Habilitacion</h2>
+      <p>Guemes 254</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+      <ion-item (click)="entrar('poste')">
+        <ion-thumbnail item-start>
+          <img src="/assets/img/poste.jpg">
+        </ion-thumbnail>
+        <h2>Poste Defectuoso</h2>
+        <p>Corvalan 1001</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item (click)="entrar('inspeccion')">
+          <ion-thumbnail item-start>
+            <img src="/assets/img/matafuego.jpg">
+          </ion-thumbnail>
+          <h2>Inspeccion Antisiniestral</h2>
+          <p>Lacarra 1245</p>
+        </ion-item>
+      </ion-list>
 </ion-content>

@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { ActionSheetController } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -13,6 +14,8 @@ import { ListaPage } from '../pages/lista/lista';
 import { NovedadesPage } from '../pages/novedades/novedades';
 import { TelefonosPage } from '../pages/telefonos/telefonos';
 import { OtrosPage } from '../pages/otros/otros';
+import { PostePage } from '../pages/poste/poste';
+import { InspeccionPage } from '../pages/inspeccion/inspeccion';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { OtrosPage } from '../pages/otros/otros';
     ListaPage,
     NovedadesPage,
     TelefonosPage,
-    OtrosPage
+    OtrosPage,
+    PostePage,
+    InspeccionPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { OtrosPage } from '../pages/otros/otros';
     ListaPage,
     NovedadesPage,
     TelefonosPage,
-    OtrosPage
+    OtrosPage,
+    PostePage,
+    InspeccionPage
   ],
   providers: [
     StatusBar,

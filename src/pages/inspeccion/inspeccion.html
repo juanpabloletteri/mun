@@ -1,0 +1,88 @@
+<!--
+  Generated template for the InspeccionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Inspeccion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-card-header>
+      Datos del Local
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        Panaderia "Las mil delicias"
+      </ion-list>
+      <ion-list>
+        Direccion: Av. Belgrano 3234
+      </ion-list>
+      <ion-list>
+        Legajo: 2534
+      </ion-list>
+
+      <br>
+      <button left ion-button icon-left>
+        <ion-icon name="map"></ion-icon>
+        Ir al lugar
+      </button>
+      <button ion-button icon-left (click)="camara()">
+        <ion-icon name="camera"></ion-icon>
+        Sacar Foto
+      </button>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h2>Requerimientos</h2>
+    </ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Matafuegos</ion-label>
+    <ion-checkbox color="danger"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Instalacion Electrica</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Salidas de emergencia</ion-label>
+    <ion-checkbox color="dark"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Alarma contra incendios</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Aislacion termoacustica</ion-label>
+    <ion-checkbox></ion-checkbox>
+  </ion-item>
+  <br>
+
+  <ion-item no-lines>
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Observaciones</span>
+      <br>
+      <textarea placeholder="yyy" rows="10" cols="50">
+      </textarea>
+    </label>
+  </ion-item>
+
+  <br>
+
+  <button ion-button icon-left (click)="enviar()" color="secondary">
+    <ion-icon name="send"></ion-icon>
+    Reportar Inspeccion
+  </button>
+
+</ion-content>
